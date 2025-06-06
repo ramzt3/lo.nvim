@@ -39,7 +39,7 @@ git clone https://github.com/ramzt3/lo.nvim.git "${env:LOCALAPPDATA}\nvim"
 | `n`  | `<leader>x`     | Make current file executable (`chmod +x`)                                                   |
 | `n`  | `<leader>u`     | Toggle Undotree                                                                             |
 | `n`  | `<leader>rl`    | Reload the Neovim config (`~/.config/nvim/init.lua`)                                        |
-| `n`  | `<leader><leader>` | Source the current file (`:so`)                                                          |
+<!-- | `n`  | `<leader><leader>` | Source the current file (`:so`)                                                          | -->
 
 ---
 
@@ -67,15 +67,15 @@ git clone https://github.com/ramzt3/lo.nvim.git "${env:LOCALAPPDATA}\nvim"
 
 | Mode | Key             | Action                                                                                      |
 |------|-----------------|---------------------------------------------------------------------------------------------|
-| `n`  | `<leader>ff`    | Find files                                                                                  |
-| `n`  | `<leader>fg`    | Find git-tracked files                                                                      |
-| `n`  | `<leader>fo`    | Open recent files                                                                           |
-| `n`  | `<leader>fq`    | Open quickfix list                                                                          |
-| `n`  | `<leader>fh`    | Open help tags                                                                              |
-| `n`  | `<leader>fb`    | Open buffer list                                                                            |
-| `n`  | `<leader>fs`    | Grep current string                                                                         |
-| `n`  | `<leader>fc`    | Grep instances of the current file name without the extension                               |
-| `n`  | `<leader>fi`    | Find files in Neovim configuration directory (`~/.config/nvim/`)                            |
+| `n`  | `<leader>sf`    | Find files                                                                                  |
+| `n`  | `<leader>sg`    | Find git-tracked files                                                                      |
+| `n`  | `<leader>so`    | Open recent files                                                                           |
+| `n`  | `<leader>sq`    | Open quickfix list                                                                          |
+| `n`  | `<leader>sh`    | Open help tags                                                                              |
+| `n`  | `<leader><leader>`    | Open buffer list                                                                            |
+| `n`  | `<leader>ss`    | Grep current string                                                                         |
+| `n`  | `<leader>sc`    | Grep instances of the current file name without the extension                               |
+| `n`  | `<leader>si`    | Find files in Neovim configuration directory (`~/.config/nvim/`)                            |
 
 ---
 

@@ -18,7 +18,7 @@ return {
         })
 
         local builtin = require('telescope.builtin')
-        vim.keymap.set('n', '<leader>sf', builtin.find_files, {})
+        vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = 'Telescope find files' })
         vim.keymap.set('n', '<leader>sg', builtin.git_files, {})
         vim.keymap.set('n', '<leader>so', builtin.oldfiles, {})
         vim.keymap.set('n', '<leader>sq', builtin.quickfix, {})
@@ -26,9 +26,21 @@ return {
         vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = 'Telescope buffers' })
 
         -- Rip grep + Fzf
-        vim.keymap.set('n', '<leader>sg', function()
+        vim.keymap.set('n', '<leader>sw', function()
             builtin.grep_string({ search = vim.fn.input("Grep > ") });
         end)
+        -- Slightly advanced example of overriding default behavior and theme
+        vim.keymap.set('n', '<leader>/', function()
+            -- You can pass additional configuration to Telescope to change the theme, layout, etc.
+            builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+                winblend = 10,
+                previewer = false,
+            })
+        end, { desc = '[/] Fuzzily search in current buffer' })
+
+        vim.keymap.set('n', '<leader>sn', function()
+            builtin.find_files { cwd = vim.fn.stdpath 'config' }
+        end, { desc = '[S]earch [N]eovim files' })
 
         -- Find instance instance of current view being included
         vim.keymap.set('n', '<leader>sc', function()

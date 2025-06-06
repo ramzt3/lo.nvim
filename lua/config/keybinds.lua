@@ -53,6 +53,6 @@ vim.keymap.set("n", "<leader>rl", "<cmd>source ~/.config/nvim/init.lua<cr>")
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- source file
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+-- vim.keymap.set("n", "<leader><leader>", function()
+--     vim.cmd("so")
+-- end)
