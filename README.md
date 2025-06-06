@@ -2,6 +2,18 @@
 
 This document provides a simple and organized overview of all the custom keybinds defined in my Neovim configuration.
 
+## Installation
+
+### Linux and macOS
+
+```sh
+git clone https://github.com/ramzt3/lo.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
+git clone https://github.com/ramzt3/lo.nvim.git "%localappdata%\nvim"
+
+git clone https://github.com/ramzt3/lo.nvim.git "${env:LOCALAPPDATA}\nvim"
+
+
 ## General Keybinds
 
 | Mode | Key             | Action                                                                                      |

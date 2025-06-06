@@ -45,7 +45,7 @@ set.scrolloff = 8
 -- undo dir settings
 set.swapfile = false
 set.backup = false
-set.undodir = os.getenv("HOME") .. "/.vim/undodir"
+-- set.undodir = os.getenv("HOME") .. "/.vim/undodir"
 set.undofile = true
 
 -- incremental search
@@ -53,3 +53,6 @@ set.incsearch = true
 
 -- faster cursor hold
 set.updatetime = 50
+
+-- nerd_font
+vim.g.have_nerd_font = true
